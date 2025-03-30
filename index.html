@@ -2573,154 +2573,132 @@
   </style>
 
  <!-- FAQ Section -->
-<section id="faq" class="faq">
-  <div class="container">
-    <div class="section-title">
-      <h2>Frequently Asked Questions</h2>
-    </div>
-    
-    <div class="faq-container animated fadeInUp">
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>How soon can you start on my project?</h3>
-          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-        </div>
-        <div class="faq-answer">
-          <p>I typically start new projects within 1-2 weeks of finalizing agreements. For smaller projects or current clients, I can sometimes accommodate faster turnarounds. My schedule is updated monthly, so please inquire about current availability.</p>
-        </div>
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
       </div>
       
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>What does your content creation process look like?</h3>
-          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+      <div class="faq-container animated fadeInUp">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How soon can you start on my project?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>I typically start new projects within 1-2 weeks of finalizing agreements. For smaller projects or current clients, I can sometimes accommodate faster turnarounds. My schedule is updated monthly, so please inquire about current availability.</p>
+          </div>
         </div>
-        <div class="faq-answer">
-          <p>My process involves four key steps: 1) Thorough research of your industry, competitors, and target keywords, 2) Developing a detailed outline for your approval, 3) Writing high-quality, SEO-optimized content, and 4) Revisions based on your feedback. Each piece goes through multiple edits to ensure it meets the highest standards.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>How do you ensure the content will rank on Google?</h3>
-          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-        </div>
-        <div class="faq-answer">
-          <p>While no one can guarantee specific rankings (beware of those who do!), my approach combines careful keyword research, search intent analysis, and SEO best practices. I analyze top-ranking content in your niche to identify patterns and opportunities, then create comprehensive content that addresses user needs better than what's currently ranking. My track record of first-page rankings demonstrates the effectiveness of this approach.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>Do you offer revisions for your content?</h3>
-          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-        </div>
-        <div class="faq-answer">
-          <p>Yes, all content packages include two rounds of revisions at no additional cost. I believe in getting your content right and ensuring you're completely satisfied. Additional revision rounds can be arranged if needed. My goal is to deliver content that perfectly aligns with your brand voice and strategic objectives.</p>
-        </div>
-      </div>
-      
-      <div class="faq-item">
-        <div class="faq-question">
-          <h3>How do you handle complex technical topics?</h3>
-          <div class="faq-toggle"><i class="fas fa-plus"></i></div>
-        </div>
-        <div class="faq-answer">
-          <p>I specialize in translating complex technical concepts into clear, accessible content. My approach involves thorough research, consulting with subject matter experts when needed, and breaking down complicated ideas into digestible sections. For highly specialized topics, I'll work closely with your team to ensure technical accuracy while maintaining readability for your target audience.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-/* FAQ Section Styles */
-.faq {
-  background-color: var(--dark);
-}
-
-.faq-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  background-color: var(--gray-200);
-  border-radius: 12px;
-  margin-bottom: 1.5rem;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.faq-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.faq-question {
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  border-left: 4px solid var(--primary);
-}
-
-.faq-question h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--light);
-}
-
-.faq-toggle {
-  color: var(--primary);
-  transition: all 0.3s ease;
-}
-
-.faq-answer {
-  padding: 0 2rem;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-}
-
-.faq-answer p {
-  padding-bottom: 1.5rem;
-  color: var(--secondary);
-  padding-top: 1rem;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 500px;
-}
-
-.faq-item.active .faq-toggle i {
-  transform: rotate(45deg);
-}
-
-<script>
-  // FAQ Toggle functionality
-  document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      
-      question.addEventListener('click', () => {
-        // Toggle active class on the clicked item
-        item.classList.toggle('active');
         
-        // Optional: Close other items
-        faqItems.forEach(otherItem => {
-          if (otherItem !== item && otherItem.classList.contains('active')) {
-            otherItem.classList.remove('active');
-          }
-        });
-      });
-    });
-  });
-</script>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>What does your content creation process look like?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>My process involves four key steps: 1) Thorough research of your industry, competitors, and target keywords, 2) Developing a detailed outline for your approval, 3) Writing high-quality, SEO-optimized content, and 4) Revisions based on your feedback. Each piece goes through multiple edits to ensure it meets the highest standards.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How do you ensure the content will rank on Google?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>While no one can guarantee specific rankings (beware of those who do!), my approach combines careful keyword research, search intent analysis, and SEO best practices. I analyze top-ranking content in your niche to identify patterns and opportunities, then create comprehensive content that addresses user needs better than what's currently ranking. My track record of first-page rankings demonstrates the effectiveness of this approach.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you offer revisions for your content?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, all content packages include two rounds of revisions at no additional cost. I believe in getting your content right and ensuring you're completely satisfied. Additional revision rounds can be arranged if needed. My goal is to deliver content that perfectly aligns with your brand voice and strategic objectives.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How do you handle complex technical topics?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>I specialize in translating complex technical concepts into clear, accessible content. My approach involves thorough research, consulting with subject matter experts when needed, and breaking down complicated ideas into digestible sections. For highly specialized topics, I'll work closely with your team to ensure technical accuracy while maintaining readability for your target audience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* FAQ Section Styles */
+    .faq {
+      background-color: var(--dark);
+    }
+    
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      background-color: var(--gray-200);
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .faq-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    
+    .faq-question {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .faq-question h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--light);
+    }
+    
+    .faq-toggle {
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+    
+    .faq-answer {
+      padding: 0 2rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+    
+    .faq-answer p {
+      padding-bottom: 1.5rem;
+      color: var(--secondary);
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+    
+    .faq-item.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+  </style>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
