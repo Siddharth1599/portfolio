@@ -2633,6 +2633,72 @@
   </div>
 </section>
 
+/* FAQ Section Styles */
+.faq {
+  background-color: var(--dark);
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--gray-200);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-left: 4px solid var(--primary);
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.faq-toggle {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.faq-answer {
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faq-answer p {
+  padding-bottom: 1.5rem;
+  color: var(--secondary);
+  padding-top: 1rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+}
+
+.faq-item.active .faq-toggle i {
+  transform: rotate(45deg);
+}
+
 <script>
   // FAQ Toggle functionality
   document.addEventListener('DOMContentLoaded', function() {
