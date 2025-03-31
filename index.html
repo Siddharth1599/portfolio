@@ -2153,27 +2153,45 @@
   }
   
   /* Desktop layout */
-  @media (min-width: 992px) {
-    .services {
-      padding: 5rem 0;
-    }
-    
-    .services-container {
-      flex-direction: row;
-      justify-content: center;
-      gap: 2.5rem;
-    }
-    
-    .service-card {
-      flex: 1;
-      max-width: 450px;
-      margin: 0;
-    }
-    
-    .service-card.premium-package {
-      margin-bottom: 0;
-    }
+ @media (min-width: 992px) {
+  /* Make container a flex row to position cards side by side */
+  .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
   }
+  
+  /* Set each card to take equal width and have the same height */
+  .service-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    max-width: calc(50% - 1rem);
+  }
+  
+  /* Ensure the service features section grows to fill space */
+  .service-features {
+    flex-grow: 1;
+  }
+  
+  /* Position the ideal-for section at the bottom */
+  .ideal-for {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Make sure buttons stay at the bottom */
+  .service-card .btn {
+    margin-top: auto;
+  }
+  
+  /* Remove any previous margin that might be causing issues */
+  .service-card.premium-package {
+    margin-bottom: 0;
+  }
+}
 </style>
 
 <!-- Client Showcase -->
