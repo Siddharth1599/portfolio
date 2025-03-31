@@ -1075,6 +1075,23 @@
 </header>
 
 <style>
+  /* Mobile-optimized Header Styles */
+  @media (max-width: 768px) {
+    .header-container {
+      padding: 0 15px; /* Add padding to move logo away from left edge */
+    }
+    
+    .logo {
+      margin-left: 10px; /* Additional margin for the logo */
+    }
+    
+    .mobile-menu {
+      margin-right: 10px; /* Ensure hamburger is properly aligned to right */
+    }
+  }
+</style>
+
+<style>
   /* Updated Header Styles */
   header {
     position: fixed;
@@ -1247,7 +1264,7 @@
     }
   </style>
 
-<!-- Updated Hero Section with Personal Image -->
+<!-- Updated Hero Section with Left Alignment for Mobile -->
 <section id="home" class="hero">
   <div class="container">
     <div class="hero-container">
@@ -1286,6 +1303,28 @@
     </div>
   </div>
 </section>
+
+<style>
+  /* Mobile-optimized Hero Section - Left Alignment */
+  @media (max-width: 768px) {
+    .hero-content {
+      text-align: left !important; /* Override the center alignment */
+      padding: 0 15px; /* Add some padding */
+    }
+    
+    .hero-buttons {
+      justify-content: flex-start !important; /* Left align the buttons */
+    }
+    
+    .trusted-by {
+      text-align: left !important; /* Left align the trusted by section */
+    }
+    
+    .client-logos {
+      justify-content: flex-start !important; /* Left align the logos */
+    }
+  }
+</style>
 
 <style>
   /* Updated Hero Section Styles */
