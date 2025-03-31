@@ -1054,7 +1054,7 @@
   </style>
 </head>
 <body>
-
+  
 <!-- Updated Header Section with Proper Alignment -->
 <header id="header">
   <div class="container header-container">
@@ -1739,7 +1739,7 @@
     </div>
   </section>
 
-<!-- Process Section with Horizontal Cards -->
+ <!-- Process Section with Horizontal Cards -->
 <section id="process" class="process">
   <div class="container">
     <div class="section-title">
@@ -1895,237 +1895,35 @@
     }
   }
 </style>
-  <!-- Client Showcase -->
-  <section id="clients" class="client-showcase">
-    <div class="container">
-      <div class="section-title">
-        <h2>Trusted by Industry Leaders</h2>
-      </div>
-      
-      <div class="showcase-container">
-        <!-- Client boxes in a single row -->
-        <div class="client-grid">
-          <div class="client-item animated scaleIn">
-            <div class="client-name">Transifex</div>
-            <div class="client-type">Localization Platform - Enterprise SaaS</div>
-          </div>
-          
-          <div class="client-item animated scaleIn">
-            <div class="client-name">Impekable</div>
-            <div class="client-type">Product Development Consultants - Tech</div>
-          </div>
-          
-          <div class="client-item animated scaleIn">
-            <div class="client-name">Cacheflow</div>
-            <div class="client-type">Revenue Management - FinTech</div>
-          </div>
-          
-          <div class="client-item animated scaleIn">
-            <div class="client-name">IxDF</div>
-            <div class="client-type">UX Design Education - EdTech</div>
-          </div>
-        </div>
-        
-        <!-- Statistics in a single row below clients -->
-        <div class="statistics">
-          <div class="stat-item animated scaleIn">
-            <div class="stat-number">45%</div>
-            <div class="stat-label">First-page Rankings</div>
-          </div>
-          
-          <div class="stat-item animated scaleIn">
-            <div class="stat-number">7+</div>
-            <div class="stat-label">Industry Leaders</div>
-          </div>
-          
-          <div class="stat-item animated scaleIn">
-            <div class="stat-number">200+</div>
-            <div class="stat-label">Articles Published</div>
-          </div>
-        </div>
+ 
+<!-- 1. First, add a single testimonial after the Traffic Solution section -->
+<div class="single-testimonial animated fadeInUp">
+  <div class="testimonial-item">
+    <div class="testimonial-content">
+      <p>Siddharth is not only knowledgable and skilled in a variety of topics, but he is also good at listening to feedback and consistently growing as time goes on.</p>
+    </div>
+    <div class="testimonial-author">
+      <div class="author-info">
+        <div class="author-name">George Kasiouras</div>
+        <div class="author-role">Former Content Manager, Transifex</div>
       </div>
     </div>
-  </section>
-  
-  <style>
-    /* Updated Client Showcase Styles */
-    .client-showcase {
-      background-color: var(--darker);
-    }
-    
-    .showcase-container {
-      display: flex;
-      flex-direction: column;
-      gap: 4rem;
-    }
-    
-    .client-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-      justify-content: center;
-    }
-    
-    .client-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-      border-radius: 12px;
-      background-color: var(--gray-200);
-      transition: all 0.4s ease;
-      border-bottom: 3px solid transparent;
-    }
-    
-    .client-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-      border-bottom: 3px solid var(--primary);
-    }
-    
-    .client-name {
-      font-weight: 600;
-      font-size: 1.25rem;
-      margin-top: 1rem;
-      color: var(--light);
-    }
-    
-    .client-type {
-      color: var(--secondary);
-      font-size: 0.875rem;
-      margin-top: 0.5rem;
-    }
-    
-    .statistics {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    
-    .stat-item {
-      text-align: center;
-      transition: all 0.4s ease;
-      padding: 2rem;
-      border-radius: 12px;
-      background-color: var(--gray-200);
-    }
-    
-    .stat-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    }
-    
-    .stat-number {
-      font-size: 3rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-    
-    .stat-label {
-      color: var(--light);
-      font-size: 1.1rem;
-    }
-    
-    @media (max-width: 992px) {
-      .client-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .statistics {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-      }
-    }
-    
-    @media (max-width: 600px) {
-      .statistics {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      
-      .stat-item {
-        padding: 1.5rem 1rem;
-      }
-      
-      .stat-number {
-        font-size: 2.2rem;
-      }
-      
-      .stat-label {
-        font-size: 0.9rem;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .client-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      .client-item {
-        padding: 1.5rem 1rem;
-      }
-      
-      .client-name {
-        font-size: 1.1rem;
-      }
-      
-      .client-type {
-        font-size: 0.75rem;
-      }
-    }
-  </style>
+  </div>
+</div>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <div class="section-title">
-        <h2>Client Testimonials</h2>
-      </div>
-      
-      <div class="testimonial-slider">
-        <div class="testimonial-item animated fadeInUp">
-          <div class="testimonial-content">
-            <p>Siddharth is not only knowledgable and skilled in a variety of topics, but he is also good at listening to feedback and consistently growing as time goes on.</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-info">
-              <div class="author-name">George Kasiouras</div>
-              <div class="author-role">Former Content Manager, Transifex</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-item animated fadeInUp">
-          <div class="testimonial-content">
-            <p>I would highly recommend Siddharth for content writing. He is a talented, creative, and dedicated professional, and I have no doubt that he would be a valuable asset to any project.</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-info">
-              <div class="author-name">Aradhana Oberoi</div>
-              <div class="author-role">POC for IxDF</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="testimonial-item animated fadeInUp">
-          <div class="testimonial-content">
-            <p>I hired Siddharth to develop an SEO strategy for my design and CRO agency, and he exceeded expectations. He delivered ahead of schedule, responded promptly to questions and requests, and the quality of his strategy has already generated a positive ROI for my business. I can't recommend Siddharth highly enough and hope to continue working with him in the new year—he's been an invaluable asset to our team.</p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-info">
-              <div class="author-name">Joseph Wheatley</div>
-              <div class="author-role">Founder @ Conversion House</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<style>
+  /* Style for the single testimonial */
+  .single-testimonial {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+  
+  /* This style should be added to the traffic-solution section */
+  .traffic-solution {
+    padding-bottom: 2rem;
+  }
+</style>
 
 <!-- Services Section -->
 <section id="services" class="services">
@@ -2162,12 +1960,12 @@
         <div class="service-price">$600/article</div>
         <div class="package-description">High-quality content created for your specific keywords</div>
         <ul class="service-features">
-          <li>Strategic content outline development</li>
+          <li>Content outline development</li>
           <li>SEO-optimized blog post (≈2,000 words)</li>
           <li>Search intent analysis for your keyword</li>
           <li>Two rounds of revisions included</li>
           <li>Meta description & title tag suggestions</li>
-          <li>Custom graphics included</li>
+          <li>Copy/content for custom graphics included</li>
         </ul>
         <div class="ideal-for">
           <span>Ideal for:</span> Businesses with an existing strategy looking to fill content gaps
@@ -2378,6 +2176,226 @@
     }
   }
 </style>
+
+<!-- Client Showcase -->
+  <section id="clients" class="client-showcase">
+    <div class="container">
+      <div class="section-title">
+        <h2>Trusted by Industry Leaders</h2>
+      </div>
+      
+      <div class="showcase-container">
+        <!-- Client boxes in a single row -->
+        <div class="client-grid">
+          <div class="client-item animated scaleIn">
+            <div class="client-name">Transifex</div>
+            <div class="client-type">Localization Platform - Enterprise SaaS</div>
+          </div>
+          
+          <div class="client-item animated scaleIn">
+            <div class="client-name">Impekable</div>
+            <div class="client-type">Product Development Consultants - Tech</div>
+          </div>
+          
+          <div class="client-item animated scaleIn">
+            <div class="client-name">Cacheflow</div>
+            <div class="client-type">Revenue Management - FinTech</div>
+          </div>
+          
+          <div class="client-item animated scaleIn">
+            <div class="client-name">IxDF</div>
+            <div class="client-type">UX Design Education - EdTech</div>
+          </div>
+        </div>
+        
+        <!-- Statistics in a single row below clients -->
+        <div class="statistics">
+          <div class="stat-item animated scaleIn">
+            <div class="stat-number">45%</div>
+            <div class="stat-label">First-page Rankings</div>
+          </div>
+          
+          <div class="stat-item animated scaleIn">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Industry Leaders</div>
+          </div>
+          
+          <div class="stat-item animated scaleIn">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Articles Published</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* Updated Client Showcase Styles */
+    .client-showcase {
+      background-color: var(--darker);
+    }
+    
+    .showcase-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+    
+    .client-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      justify-content: center;
+    }
+    
+    .client-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      border-radius: 12px;
+      background-color: var(--gray-200);
+      transition: all 0.4s ease;
+      border-bottom: 3px solid transparent;
+    }
+    
+    .client-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      border-bottom: 3px solid var(--primary);
+    }
+    
+    .client-name {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      color: var(--light);
+    }
+    
+    .client-type {
+      color: var(--secondary);
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+    }
+    
+    .statistics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .stat-item {
+      text-align: center;
+      transition: all 0.4s ease;
+      padding: 2rem;
+      border-radius: 12px;
+      background-color: var(--gray-200);
+    }
+    
+    .stat-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+      color: var(--light);
+      font-size: 1.1rem;
+    }
+    
+    @media (max-width: 992px) {
+      .client-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .statistics {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+    }
+    
+    @media (max-width: 600px) {
+      .statistics {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .stat-item {
+        padding: 1.5rem 1rem;
+      }
+      
+      .stat-number {
+        font-size: 2.2rem;
+      }
+      
+      .stat-label {
+        font-size: 0.9rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .client-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .client-item {
+        padding: 1.5rem 1rem;
+      }
+      
+      .client-name {
+        font-size: 1.1rem;
+      }
+      
+      .client-type {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+
+<!-- 3. Move the remaining testimonials to after the pricing section -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <div class="section-title">
+      <h2>What Clients Are Saying</h2>
+    </div>
+    
+    <div class="testimonial-slider">      
+      <div class="testimonial-item animated fadeInUp">
+        <div class="testimonial-content">
+          <p>I would highly recommend Siddharth for content writing. He is a talented, creative, and dedicated professional, and I have no doubt that he would be a valuable asset to any project.</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <div class="author-name">Aradhana Oberoi</div>
+            <div class="author-role">POC for IxDF</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-item animated fadeInUp">
+        <div class="testimonial-content">
+          <p>I hired Siddharth to develop an SEO strategy for my design and CRO agency, and he exceeded expectations. He delivered ahead of schedule, responded promptly to questions and requests, and the quality of his strategy has already generated a positive ROI for my business. I can't recommend Siddharth highly enough and hope to continue working with him in the new year—he's been an invaluable asset to our team.</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <div class="author-name">Joseph Wheatley</div>
+            <div class="author-role">Founder @ Conversion House</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   
  <!-- FAQ Section -->
   <section id="faq" class="faq">
