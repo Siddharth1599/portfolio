@@ -1739,53 +1739,162 @@
     </div>
   </section>
 
-  <!-- Process Section -->
-  <section id="process" class="process">
-    <div class="container">
-      <div class="section-title">
-        <h2>Content Creation Process</h2>
+<!-- Process Section with Horizontal Cards -->
+<section id="process" class="process">
+  <div class="container">
+    <div class="section-title">
+      <h2>Content Creation Process</h2>
+    </div>
+    
+    <div class="process-steps-container">
+      <div class="process-step-card animated fadeInUp">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Keyword Research & Analysis</h3>
+          <ul>
+            <li>Identify target keywords with search intent</li>
+            <li>Analyze competition and difficulty</li>
+            <li>Evaluate search volume and trends</li>
+          </ul>
+        </div>
       </div>
       
-      <div class="process-steps">
-        <div class="process-step animated slideRight">
-          <div class="step-number">1</div>
-          <div class="step-content">
-            <h3>Keyword Research & Analysis</h3>
-            <ul>
-              <li>Identify target keywords with search intent</li>
-              <li>Analyze competition and difficulty</li>
-              <li>Evaluate search volume and trends</li>
-            </ul>
-          </div>
+      <div class="process-step-card animated fadeInUp">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Content Strategy & Outline</h3>
+          <ul>
+            <li>Develop comprehensive content outline</li>
+            <li>Structure content for maximum impact</li>
+            <li>Get outline approval from stakeholders</li>
+          </ul>
         </div>
-        
-        <div class="process-step animated slideRight">
-          <div class="step-number">2</div>
-          <div class="step-content">
-            <h3>Content Strategy & Outline</h3>
-            <ul>
-              <li>Develop comprehensive content outline</li>
-              <li>Structure content for maximum impact</li>
-              <li>Get outline approval from stakeholders</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="process-step animated slideRight">
-          <div class="step-number">3</div>
-          <div class="step-content">
-            <h3>Content Creation & Optimization</h3>
-            <ul>
-              <li>Write engaging, SEO-optimized content</li>
-              <li>Incorporate relevant keywords naturally</li>
-              <li>Review and refine based on feedback</li>
-            </ul>
-          </div>
+      </div>
+      
+      <div class="process-step-card animated fadeInUp">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Content Creation & Optimization</h3>
+          <ul>
+            <li>Write engaging, SEO-optimized content</li>
+            <li>Incorporate relevant keywords naturally</li>
+            <li>Review and refine based on feedback</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<style>
+  /* Updated Process Section Styles */
+  .process {
+    background-color: var(--dark);
+    padding: 5rem 1rem;
+  }
+  
+  /* Container for all process steps */
+  .process-steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual process step card */
+  .process-step-card {
+    background-color: var(--gray-200);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    border-left: 4px solid var(--primary);
+  }
+  
+  .process-step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.3);
+  }
+  
+  .step-content h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .step-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .step-content ul li {
+    padding-left: 1.8rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+  }
+  
+  .step-content ul li:before {
+    content: '✓';
+    color: var(--success);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  /* Tablet and Desktop layouts */
+  @media (min-width: 768px) {
+    .process {
+      padding: 5rem 2rem;
+    }
+    
+    .process-steps-container {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+    
+    .process-step-card {
+      flex: 1;
+      padding: 2rem;
+      border-left: none;
+      border-top: 4px solid var(--primary);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .process {
+      padding: 5rem 0;
+    }
+    
+    .process-steps-container {
+      gap: 2rem;
+    }
+    
+    .process-step-card {
+      padding: 2.5rem;
+    }
+  }
+</style>
   <!-- Client Showcase -->
   <section id="clients" class="client-showcase">
     <div class="container">
