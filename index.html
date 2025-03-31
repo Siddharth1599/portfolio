@@ -1883,7 +1883,7 @@
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="section-title">
-        <h2>My Work</h2>
+        <h2>High-Ranking Content</h2>
       </div>
       
       <div class="portfolio-grid">
@@ -2800,30 +2800,13 @@
         </div>
       </div>
       
-     <div class="contact-form animated fadeInUp">
-  <form id="contactForm" onsubmit="submitForm(event)">
-          <div class="form-header">
-            <h3>Book Your Appointment Now</h3>
-          </div>
-          
-          <div style="margin-bottom: 1.5rem;">
-            <label for="name" style="display: block; margin-bottom: 0.8rem; color: var(--light);">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" style="width: 100%; padding: 0.9rem; border-radius: 8px; background-color: var(--gray-200); color: var(--light); border: 1px solid var(--gray-300);">
-          </div>
-          
-          <div style="margin-bottom: 1.5rem;">
-            <label for="email" style="display: block; margin-bottom: 0.8rem; color: var(--light);">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your email" style="width: 100%; padding: 0.9rem; border-radius: 8px; background-color: var(--gray-200); color: var(--light); border: 1px solid var(--gray-300);">
-          </div>
-          
-          <div style="margin-bottom: 1.5rem;">
-            <label for="message" style="display: block; margin-bottom: 0.8rem; color: var(--light);">Tell me about your business</label>
-            <textarea id="message" name="message" rows="5" placeholder="Describe your business and content challenges" style="width: 100%; padding: 0.9rem; border-radius: 8px; background-color: var(--gray-200); color: var(--light); border: 1px solid var(--gray-300);"></textarea>
-          </div>
-          
-          <button type="button" class="btn btn-primary" style="width: 100%;" onclick="window.location.href='mailto:siddsharma.work@gmail.com?subject=Content Strategy Session Request'">Schedule My Session</button>
-        </form>
-      </div>
+    <div class="contact-form animated fadeInUp">
+  <div class="form-header">
+    <h3>Book Your Appointment Now</h3>
+  </div>
+  
+  <iframe src="https://app.youform.com/forms/kjfxx3ev" loading="lazy" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+</div>
     </div>
   </div>
 </section>
@@ -3132,22 +3115,5 @@
       });
     });
   </script>
-<script>
-  function submitForm(event) {
-    event.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Create email content
-    const subject = 'Content Strategy Session Request';
-    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-    
-    // Open email client with pre-filled data
-    window.location.href = `mailto:siddsharma.work@gmail.com?subject=${subject}&body=${body}`;
-  }
-</script>
 </body>
 </html>
