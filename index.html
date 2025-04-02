@@ -1075,24 +1075,28 @@
 </header>
 
 <style>
-  /* Mobile-optimized Header Styles */
-  @media (max-width: 768px) {
-    .header-container {
-      padding: 0 15px; /* Add padding to move logo away from left edge */
-    }
-    
-    .logo {
-      margin-left: 10px; /* Additional margin for the logo */
-    }
-    
-    .mobile-menu {
-      margin-right: 10px; /* Ensure hamburger is properly aligned to right */
-    }
-  }
-</style>
+ 
+<!-- Updated Header Section with Proper Alignment -->
+<header id="header">
+  <div class="container header-container">
+    <a href="#" class="logo">Create<span>with</span>Sid</a>
+    <div class="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li class="nav-button"><a href="#contact" class="btn btn-primary">Let's Talk</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <style>
-  /* Updated Header Styles */
+  /* Updated Header Styles with Fixed Mobile Menu Positioning */
   header {
     position: fixed;
     top: 0;
@@ -1114,6 +1118,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px; /* Add consistent padding */
   }
   
   .logo {
@@ -1129,7 +1134,7 @@
   .nav-links {
     display: flex;
     list-style: none;
-    align-items: center; /* This ensures vertical alignment */
+    align-items: center;
     margin: 0;
     padding: 0;
   }
@@ -1158,10 +1163,21 @@
     display: none;
     cursor: pointer;
     color: var(--light);
+    font-size: 1.2rem;
   }
   
   /* Responsive Styles */
   @media (max-width: 768px) {
+    nav {
+      order: 3; /* Ensure nav comes after mobile menu in flex order */
+    }
+    
+    .mobile-menu {
+      display: block;
+      order: 2; /* Place mobile menu after logo */
+      margin-left: auto; /* Push to right edge */
+    }
+    
     .nav-links {
       position: fixed;
       top: 70px;
@@ -1182,10 +1198,6 @@
     
     .nav-links li {
       margin: 1.5rem 0;
-    }
-    
-    .mobile-menu {
-      display: block;
     }
     
     .nav-links .nav-button {
@@ -3012,61 +3024,62 @@
   
   <!-- Script for mobile improvements -->
   <script>
-    // Header scroll effect
-    window.addEventListener('scroll', function() {
-      const header = document.getElementById('header');
-      if (window.scrollY > 50) {
-        header.classList.add('header-scrolled');
-      } else {
-        header.classList.remove('header-scrolled');
+  // Header scroll effect
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
+      header.classList.add('header-scrolled');
+    } else {
+      header.classList.remove('header-scrolled');
+    }
+  });
+  
+  // Improved Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const mobileMenuIcon = mobileMenu.querySelector('i');
+    
+    // Toggle menu on hamburger click and change icon
+    if (mobileMenu) {
+      mobileMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+        
+        if (navLinks.classList.contains('active')) {
+          // If menu is open, close it and change to hamburger icon
+          navLinks.classList.remove('active');
+          mobileMenuIcon.className = 'fas fa-bars';
+          document.body.style.overflow = ''; // Re-enable scrolling
+        } else {
+          // If menu is closed, open it and change to X icon
+          navLinks.classList.add('active');
+          mobileMenuIcon.className = 'fas fa-times';
+          document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+      });
+    }
+    
+    // Close menu when clicking a link
+    const menuLinks = document.querySelectorAll('.nav-links a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('active');
+        mobileMenuIcon.className = 'fas fa-bars'; // Change back to hamburger icon
+        document.body.style.overflow = ''; // Re-enable scrolling
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && e.target !== mobileMenu) {
+        navLinks.classList.remove('active');
+        mobileMenuIcon.className = 'fas fa-bars'; // Change back to hamburger icon
+        document.body.style.overflow = ''; // Re-enable scrolling
       }
     });
     
-    // Improved Mobile menu toggle
-    document.addEventListener('DOMContentLoaded', function() {
-      const mobileMenu = document.querySelector('.mobile-menu');
-      const navLinks = document.querySelector('.nav-links');
-      
-      // Add close button to mobile menu
-      const closeButton = document.createElement('div');
-      closeButton.className = 'close-menu';
-      closeButton.innerHTML = '<i class="fas fa-times"></i>';
-      navLinks.prepend(closeButton);
-      
-      // Toggle menu on hamburger click
-      if (mobileMenu) {
-        mobileMenu.addEventListener('click', function(e) {
-          e.stopPropagation();
-          navLinks.classList.add('active');
-          document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        });
-      }
-      
-      // Close menu when clicking the close button
-      closeButton.addEventListener('click', function() {
-        navLinks.classList.remove('active');
-        document.body.style.overflow = ''; // Re-enable scrolling
-      });
-      
-      // Close menu when clicking a link
-      const menuLinks = document.querySelectorAll('.nav-links a');
-      menuLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          navLinks.classList.remove('active');
-          document.body.style.overflow = ''; // Re-enable scrolling
-        });
-      });
-      
-      // Close menu when clicking outside
-      document.addEventListener('click', function(e) {
-        if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && e.target !== mobileMenu) {
-          navLinks.classList.remove('active');
-          document.body.style.overflow = ''; // Re-enable scrolling
-        }
-      });
-      
-      // Add scroll indicators
-      const scrollContainers = document.querySelectorAll('.solutions-grid, .expertise-grid, .services-grid, .portfolio-grid');
+    // Add scroll indicators
+    const scrollContainers = document.querySelectorAll('.solutions-grid, .expertise-grid, .services-grid, .portfolio-grid');
       
       scrollContainers.forEach(container => {
         // Add indicator dots
